@@ -12,7 +12,6 @@ interface WorkExperience {
     type: string;
     period: string;
     description: string[];
-    isActive?: boolean;
 }
 
 const workHistory: WorkExperience[] = [
@@ -23,7 +22,6 @@ const workHistory: WorkExperience[] = [
         location: "United Kingdom",
         type: "Full-Time",
         period: "Mar 2023 - Present",
-        isActive: true,
         description: [
             "Led the front-end work from the project inception.",
             "Maintained a browser extension, widget and web application as a monorepo.",
@@ -38,7 +36,6 @@ const workHistory: WorkExperience[] = [
         location: "United States",
         type: "Contract",
         period: "Jun 2022 - Feb 2023",
-        isActive: false,
         description: [
             "Was solving complex problems using the latest Web Standards.",
             "Architected the product's front-end structure.",
@@ -75,7 +72,6 @@ export default function WorkHistory() {
                                     location,
                                     type,
                                     period,
-                                    isActive,
                                     description,
                                 } = items;
 

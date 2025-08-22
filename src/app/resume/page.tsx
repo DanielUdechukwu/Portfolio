@@ -13,7 +13,7 @@ interface Skill {
     slug: string;
 }
 
-const skills = [
+const skills: Skill[] = [
     {
         id: 1,
         skill: "Next.js",
@@ -83,6 +83,7 @@ export default function Resume() {
                 <div className="w-[90%]">
                     <h2 className="text-[2.5rem] font-bold">My Resume/CV</h2>
                     <p className="mt-[1rem] ">
+                        {/* eslint-disable-next-line */}
                         I'm a highly skilled full-stack engineer with more than
                         8 years of experience in building web applications. On
                         this page, you can learn more about my knowledge stack
@@ -101,6 +102,7 @@ export default function Resume() {
                     <p>
                         Here are the frameworks, libraries, services and
                         runtimes I have experience with. This is not a complete
+                        {/* eslint-disable-next-line */}
                         list! I'm constantly gaining new skills, and hence it
                         can be a little bit outdated.
                     </p>
