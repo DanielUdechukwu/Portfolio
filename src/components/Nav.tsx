@@ -9,10 +9,12 @@ export default function Navigation() {
     return (
         <>
             <nav className="w-[95%] uppercase mx-auto py-[1rem] items-center flex justify-between">
-                <p className="text-[3rem] font-bold flex gap-[.5rem]">
-                    {/* eslint-disable-next-line */}
-                    <span className="text-accent">//</span>DU
-                </p>
+                <Link href="/">
+                    <p className="text-[3rem] font-bold flex gap-[.5rem]">
+                        {/* eslint-disable-next-line */}
+                        <span className="text-accent">//</span>DU
+                    </p>
+                </Link>
 
                 <div className="flex items-center gap-[2rem]">
                     <Link href="/resume">

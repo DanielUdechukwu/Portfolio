@@ -3,7 +3,7 @@ import { SquigglyLine } from "@/components/SquigglyLine";
 export default function Home() {
     return (
         <>
-            <section className="w-full flex justify-center text-2xl font-medium items-center">
+            <section className="w-full flex flex-col items-center pt-[5rem] justify-center text-2xl font-medium">
                 <div className="w-[90%] max-w-[60rem] mx-auto">
                     <div>
                         <h2 className="text-[2.5rem] font-bold">

@@ -26,7 +26,7 @@ export default function RootLayout({
                 className={`${spaceGrotesk.variable} space-grotesk background text-white min-h-screen flex flex-col antialiased`}
             >
                 <Navigation />
-                <main className="flex-grow flex items-center">{children}</main>
+                <main className="flex-grow">{children}</main>
                 <Footer />
             </body>
         </html>
