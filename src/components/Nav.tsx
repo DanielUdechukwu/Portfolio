@@ -20,7 +20,14 @@ export default function Navigation() {
                     <Link href="/resume">
                         <p className="font-bold cursor-pointer">Resume</p>
                     </Link>
-                    <p className="font-bold cursor-pointer">Contact</p>
+
+                    <Link href="/projects">
+                        <p className="font-bold cursor-pointer">Projects</p>
+                    </Link>
+
+                    <Link href="/contact">
+                        <p className="font-bold cursor-pointer">Contact</p>
+                    </Link>
 
                     <section className="flex items-center gap-[1.5rem]">
                         <Image

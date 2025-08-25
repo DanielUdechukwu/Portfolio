@@ -62,7 +62,7 @@ export default function WorkHistory() {
                 </p>
 
                 <section className="mt-[3rem]">
-                    <div className="min-h-screen">
+                    <div className="">
                         <div className="relative border-l-2 border-gray-700 ml-[1rem]">
                             {workHistory.map((items) => {
                                 const {
