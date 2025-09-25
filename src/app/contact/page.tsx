@@ -11,7 +11,7 @@ export default function Contact() {
                 <div>
                     <h2 className="text-[2.5rem] font-bold">Get in touch</h2>
                     <p className="">
-                        Do you have an exciting project? Let's talk!
+                        {"Do you have an exciting project? Let's talk!"}
                     </p>
 
                     <SquigglyLine />

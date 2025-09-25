@@ -12,7 +12,7 @@ export default function NotFound() {
                 <h2 className="text-[2.5rem] font-bold">Page Not Found</h2>
 
                 <p className="mt-2 text-[1.5rem]">
-                    Sorry, the page you are looking for doesn't exist :(
+                    {"Sorry, the page you are looking for doesn't exist :("}
                 </p>
 
                 <SquigglyLine />
