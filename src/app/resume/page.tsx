@@ -1,7 +1,6 @@
 /**
  * Resume page
  */
-
 import { SquigglyLine } from "@/components/SquigglyLine";
 import WorkHistory from "@/components/WorkHistory";
 import Image from "next/image";
@@ -79,27 +78,28 @@ const skills: Skill[] = [
 export default function Resume() {
     return (
         <>
-            <section className="w-[90%] max-w-[60rem] pb-[4rem] text-[1.5rem] mx-auto">
-                <div className="w-[90%]">
-                    <h2 className="text-[2.5rem] font-bold">My Resume/CV</h2>
-                    <p className="mt-[1rem] ">
+            <section className="w-full max-w-[60rem] pb-12 sm:pb-16 md:pb-[4rem] text-base sm:text-lg md:text-[1.5rem] mx-auto px-4 sm:px-6 md:px-0">
+                {/* Introduction Section */}
+                <div className="w-full md:w-[90%] mt-[4rem]">
+                    <h2 className="text-3xl sm:text-3xl md:text-[2.5rem] font-bold leading-tight">
+                        My Resume/CV
+                    </h2>
+                    <p className="mt-4 md:mt-[1rem] leading-relaxed sm:leading-relaxed md:leading-normal text-base sm:text-base md:text-[1.5rem]">
                         {/* eslint-disable-next-line */}
                         I'm a highly skilled full-stack engineer with more than
                         8 years of experience in building web applications. On
                         this page, you can learn more about my knowledge stack
                         and my previous work experience.
                     </p>
-
                     <SquigglyLine />
                 </div>
 
-                {/* Skills */}
-
-                <div className="w-[90%]">
-                    <h2 className="text-[2.5rem] font-bold mt-[4rem]">
+                {/* Skills Section */}
+                <div className="w-full md:w-[90%]">
+                    <h2 className="text-3xl sm:text-3xl md:text-[2.5rem] font-bold mt-8 sm:mt-12 md:mt-[4rem] leading-tight">
                         Skills
                     </h2>
-                    <p>
+                    <p className="text-base sm:text-base md:text-[1.5rem] leading-relaxed sm:leading-relaxed md:leading-normal">
                         Here are the frameworks, libraries, services and
                         runtimes I have experience with. This is not a complete
                         {/* eslint-disable-next-line */}
@@ -107,31 +107,31 @@ export default function Resume() {
                         can be a little bit outdated.
                     </p>
 
-                    <ul className="mt-[3rem] flex items-center gap-[1rem] flex-wrap">
+                    {/* Skills Grid */}
+                    <ul className="mt-6 sm:mt-8 md:mt-[3rem] grid grid-cols-3 md:grid-cols-4 lg:flex items-center flex-wrap gap-3 sm:gap-4 md:gap-[1rem]">
                         {skills.map((skills) => {
                             const { id, skill, iconUrl, slug } = skills;
-
                             return (
                                 <li
                                     key={id}
-                                    className="flex items-center gap-[.8rem] text-[1rem] font-medium"
+                                    className="flex items-center gap-2 sm:gap-3 md:gap-[.8rem] text-sm sm:text-base md:text-[1rem] font-medium p-2 sm:p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                                 >
                                     <Image
                                         src={iconUrl}
-                                        width={32}
-                                        height={32}
+                                        width={24}
+                                        height={24}
                                         alt={`${slug} Image`}
-                                    />{" "}
-                                    {skill}
+                                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-[2rem] md:h-[2rem] flex-shrink-0"
+                                    />
+                                    <span className="truncate">{skill}</span>
                                 </li>
                             );
                         })}
                     </ul>
                 </div>
 
-                {/* Work History */}
-
-                <div className="mt-[3rem]">
+                {/* Work History Section */}
+                <div className="mt-8 sm:mt-12 md:mt-[3rem]">
                     <WorkHistory />
                 </div>
             </section>

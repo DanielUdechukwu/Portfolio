@@ -49,21 +49,21 @@ const workHistory: WorkExperience[] = [
 export default function WorkHistory() {
     return (
         <>
-            <section>
-                <h1 className="text-[2.5rem] font-bold mt-[4rem]">
+            <section className="w-full">
+                <h1 className="text-2xl sm:text-3xl md:text-[2.5rem] font-bold mt-8 sm:mt-12 md:mt-[4rem] leading-tight">
                     Work History
                 </h1>
-                <p>
+                <p className="text-sm sm:text-base md:text-[1.5rem] leading-relaxed sm:leading-relaxed md:leading-normal mt-4 md:mt-[1rem]">
                     Below you will find a summary of my past employment
                     experience. Additionally, if you require, you can{" "}
-                    <span className="cursor-pointer border-b-2 border-[#f59e0b]">
+                    <span className="cursor-pointer border-b-2 border-[#f59e0b] hover:border-[#d97706] transition-colors">
                         download my resume.
                     </span>
                 </p>
 
-                <section className="mt-[3rem]">
-                    <div className="">
-                        <div className="relative border-l-2 border-gray-700 ml-[1rem]">
+                <section className="mt-6 sm:mt-8 md:mt-[3rem]">
+                    <div className="w-full">
+                        <div className="relative border-l-2 border-gray-700 ml-2 sm:ml-4 md:ml-[1rem]">
                             {workHistory.map((items) => {
                                 const {
                                     id,
@@ -78,33 +78,50 @@ export default function WorkHistory() {
                                 return (
                                     <div
                                         key={id}
-                                        className={`relative pl-8 ${
+                                        className={`relative pl-4 sm:pl-6 md:pl-8 ${
                                             id === workHistory.length
                                                 ? "pb-1"
-                                                : "pb-12"
+                                                : "pb-8 sm:pb-10 md:pb-12"
                                         }`}
                                     >
                                         {/* Timeline Dot */}
                                         <span
-                                            className={`absolute left-[-0.55rem] top-[0.45rem] w-[1rem] h-[1rem] rounded-full bg-[#f59e0b] ${
+                                            className={`absolute left-[-0.44rem] sm:left-[-0.45rem] md:left-[-0.55rem] top-[0.3rem] sm:top-[0.4rem] md:top-[0.45rem] w-[0.75rem] h-[0.75rem] sm:w-[0.875rem] sm:h-[0.875rem] md:w-[1rem] md:h-[1rem] rounded-full bg-[#f59e0b] ${
                                                 id === 1
-                                                    ? "ring-[.5rem] ring-[#f59e0b]/60"
+                                                    ? "ring-4 sm:ring-[0.375rem] md:ring-[.5rem] ring-[#f59e0b]/60"
                                                     : ""
                                             }`}
                                         ></span>
 
-                                        <div>
-                                            <h3 className="text-white font-semibold text-[1.5rem] leading-[1.8rem]">
+                                        <div className="space-y-2 sm:space-y-3 md:space-y-1">
+                                            <h3 className="text-white font-semibold text-lg sm:text-xl md:text-[1.5rem] leading-tight sm:leading-relaxed md:leading-[1.8rem]">
                                                 {role}
                                             </h3>
 
-                                            <p className="text-white/80 text-[1.2rem] font-medium mt-1">
-                                                {company} • {location} • {type}
-                                            </p>
-                                            <p className="text-white/70 text-[1rem] font-medium mt-1">
+                                            {/* Company Info - Stack on mobile, inline on larger screens */}
+                                            <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-0">
+                                                <p className="text-white/80 text-sm sm:text-base md:text-[1.2rem] font-medium">
+                                                    {company}
+                                                </p>
+                                                <span className="hidden sm:inline text-white/80 text-sm sm:text-base md:text-[1.2rem] font-medium mx-2">
+                                                    •
+                                                </span>
+                                                <p className="text-white/80 text-sm sm:text-base md:text-[1.2rem] font-medium">
+                                                    {location}
+                                                </p>
+                                                <span className="hidden sm:inline text-white/80 text-sm sm:text-base md:text-[1.2rem] font-medium mx-2">
+                                                    •
+                                                </span>
+                                                <p className="text-white/80 text-sm sm:text-base md:text-[1.2rem] font-medium">
+                                                    {type}
+                                                </p>
+                                            </div>
+
+                                            <p className="text-white/70 text-xs sm:text-sm md:text-[1rem] font-medium">
                                                 {period}
                                             </p>
-                                            <ul className="list-disc text-white/90 text-[1.3rem] mt-3 pl-[2rem]">
+
+                                            <ul className="list-disc text-white/90 text-sm sm:text-base md:text-[1.3rem] mt-3 sm:mt-4 md:mt-3 pl-4 sm:pl-6 md:pl-[2rem] space-y-2 sm:space-y-2 md:space-y-1">
                                                 {description.map((item, i) => (
                                                     <li
                                                         key={i}
