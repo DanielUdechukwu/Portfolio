@@ -7,7 +7,8 @@
 /* Custom utility classes using your variables */
 @layer utilities {
     .background {
-        background-color: #0f172a;
+        background-color: #06031b;
+        /* background-color: #0f172a; */
     }
 
     .text-primary {
