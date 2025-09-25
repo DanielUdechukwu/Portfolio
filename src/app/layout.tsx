@@ -23,7 +23,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${spaceGrotesk.variable} space-grotesk background text-white min-h-screen flex flex-col antialiased`}
+                className={`${spaceGrotesk.variable} space-grotesk background text-white min-h-dvh flex flex-col antialiased`}
             >
                 <Navigation />
                 <main className="flex-grow">{children}</main>
