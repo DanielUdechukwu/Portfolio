@@ -14,8 +14,7 @@ interface ProjectTypes {
     name: string;
     image: string;
     category: string;
-    challenge: string;
-    solution: string;
+    description: string;
     technologies: string[];
     projectUrl: string;
 }
@@ -32,27 +31,23 @@ export default function Projects() {
     const projects: ProjectTypes[] = [
         {
             id: 1,
-            name: "NeuraFlow Dashboard",
+            name: "AsteriskRD Website",
             image: "/images/project1.png",
             category: "Web-App",
-            challenge:
-                "Users needed real-time insights from complex data streams but existing solutions were cluttered and slow, leading to poor decision-making and user frustration.",
-            solution:
-                "Designed an AI-powered dashboard with intelligent data prioritization, custom visualization widgets, and predictive analytics that adapts to user behavior patterns.",
-            technologies: ["React Native", "AI/ML", "Real-time", "Data Viz"],
+            description:
+                "An AI-powered analytics dashboard that delivers real-time insights from complex data streams. Features intelligent data prioritization, custom visualization widgets, and predictive analytics that adapt to user behavior patterns for enhanced decision-making.",
+            technologies: ["Next.js", "TailwindCSS", "Real-time", "Data Viz"],
             projectUrl: "https://asteriskrd.tech",
         },
         {
             id: 2,
-            name: "HoloShop Commerce",
+            name: "Avantlush",
             image: "/images/project2.png",
             category: "E-commerce",
-            challenge:
-                "Traditional e-commerce platforms couldn't showcase products effectively, resulting in high cart abandonment rates and low customer confidence in purchases.",
-            solution:
-                "Built an immersive 3D product visualization platform with AR try-before-buy features, intelligent recommendations, and seamless checkout experience. Lorem Lorem Lorem Lorem",
-            technologies: ["React", "Three.js", "AR/VR", "WebGL"],
-            projectUrl: "https://avantlush.com",
+            description:
+                "A modern e-commerce platform designed specifically for furniture retail. Features high-quality product galleries, detailed specifications, customer reviews, and an intuitive shopping experience that helps customers make confident purchasing decisions.",
+            technologies: ["ReactJS", "TailwindCSS", "E-Commerce"],
+            projectUrl: "#",
         },
     ];
 
@@ -91,14 +86,16 @@ export default function Projects() {
             name,
             category,
             image,
-            challenge,
-            solution,
+            description,
             technologies,
             projectUrl,
         } = project;
 
         return (
-            <div className="inter CARD group hover:scale-99 duration-500 transition-transform flex h-full flex-col rounded-[0.75rem] border-2 border-[#FFFFFF]/10">
+            <div
+                key={id}
+                className="inter CARD group hover:scale-99 duration-500 transition-transform flex h-full flex-col rounded-[0.75rem] border-2 border-[#FFFFFF]/10"
+            >
                 <div className="relative w-full rounded-[0.75rem]">
                     <Image
                         src={image}
@@ -145,19 +142,10 @@ export default function Projects() {
                     <div className="mt-4 sm:mt-5 md:mt-[1.5rem] space-y-3 sm:space-y-4 md:space-y-[1rem]">
                         <div>
                             <h3 className="text-xs sm:text-sm md:text-[0.875rem] font-bold text-[#60E6FB] uppercase">
-                                Challenge
+                                Description
                             </h3>
                             <p className="mt-2 md:mt-[0.5rem] text-sm sm:text-base md:text-[0.938rem] font-normal text-[#A1A1AA] leading-relaxed">
-                                {challenge}
-                            </p>
-                        </div>
-
-                        <div>
-                            <h3 className="text-xs sm:text-sm md:text-[0.875rem] font-bold text-[#BF83FC] uppercase">
-                                Solution
-                            </h3>
-                            <p className="mt-2 md:mt-[0.5rem] text-sm sm:text-base md:text-[0.938rem] font-normal text-[#A1A1AA] leading-relaxed">
-                                {solution}
+                                {description}
                             </p>
                         </div>
 
@@ -193,8 +181,7 @@ export default function Projects() {
                     </h1>
                     <h3 className="text-sm sm:text-base md:text-[1.3rem] mt-4 md:mt-[1rem] leading-relaxed">
                         A collection of Web applications and development
-                        projects showcasing my expertise in the React ecosystem
-                        and full-stack development.
+                        projects showcasing my expertise in the React ecosystem.
                     </h3>
                     <SquigglyLine />
 

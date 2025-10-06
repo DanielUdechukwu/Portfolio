@@ -86,10 +86,14 @@ export default function Resume() {
                     </h2>
                     <p className="mt-4 md:mt-[1rem] leading-relaxed sm:leading-relaxed md:leading-normal text-base sm:text-base md:text-[1.5rem]">
                         {/* eslint-disable-next-line */}
-                        I'm a highly skilled full-stack engineer with more than
-                        8 years of experience in building web applications. On
-                        this page, you can learn more about my knowledge stack
-                        and my previous work experience.
+                        I'm a dedicated full-stack engineer with 3 years of
+                        professional experience developing innovative web
+                        {/* eslint-disable-next-line */}
+                        applications. I'm constantly expanding my skill set and
+                        love tackling challenging projects. Discover my
+                        {/* eslint-disable-next-line */}
+                        technical expertise and the work I've delivered for
+                        clients and teams.
                     </p>
                     <SquigglyLine />
                 </div>

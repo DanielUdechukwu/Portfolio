@@ -17,31 +17,61 @@ interface WorkExperience {
 const workHistory: WorkExperience[] = [
     {
         id: 1,
-        role: "Lead Front-end Engineer",
-        company: "Propbar",
-        location: "United Kingdom",
-        type: "Full-Time",
-        period: "Mar 2023 - Present",
+        role: "Lead Frontend Developer",
+        company: "AsteriskRD",
+        location: "Canada (Remote)",
+        type: "Internship",
+        period: "Feb 2024 - May 2024",
         description: [
-            "Led the front-end work from the project inception.",
-            "Maintained a browser extension, widget and web application as a monorepo.",
-            "Architected a highly complex real-estate map service.",
-            "Implemented a sophisticated data grid of property comparables.",
+            "Led frontend development initiatives for the company website from inception to deployment.",
+            "Optimized website performance, resulting in improved load times and user experience.",
+            "Established frontend architecture and coding standards for the development team.",
+            "Collaborated with designers and backend developers to deliver seamless user interfaces.",
+            "Mentored junior developers and conducted code reviews to maintain quality standards.",
         ],
     },
     {
         id: 2,
-        role: "Senior Front-end Engineer",
-        company: "LaiqDB",
-        location: "United States",
-        type: "Contract",
-        period: "Jun 2022 - Feb 2023",
+        role: "DevOps Engineer",
+        company: "Hasob Integrated Services",
+        location: "Nigeria",
+        type: "Full-Time",
+        period: "Feb 2025 - Present",
         description: [
-            "Was solving complex problems using the latest Web Standards.",
-            "Architected the product's front-end structure.",
-            "Accomplished the development of sophisticated UI components.",
-            "Developed the open-source component library.",
-            "Crafted responsive marketing landing pages.",
+            "Manage and maintain company servers and applications across local and cloud infrastructure.",
+            "Deploy and orchestrate containerized applications using Kubernetes clusters.",
+            "Implement CI/CD pipelines to streamline deployment processes and improve system reliability.",
+            "Monitor system performance and optimize infrastructure for scalability and security.",
+            "Collaborate with development teams to ensure smooth application deployment and operations.",
+        ],
+    },
+    {
+        id: 3,
+        role: "Frontend Developer & Community Manager",
+        company: "AsteriskRD",
+        location: "Canada (Remote)",
+        type: "Volunteer",
+        period: "Aug 2025 - Present",
+        description: [
+            "Develop and maintain frontend features for company projects using modern web technologies.",
+            "Mentor interns and junior developers, providing guidance on best practices and technical skills.",
+            "Manage developer community initiatives, fostering collaboration and knowledge sharing.",
+            "Coordinate onboarding processes and create learning resources for new team members.",
+        ],
+    },
+    {
+        id: 4,
+        role: "Frontend Developer",
+        company: "Winter Developers",
+        location: "Nigeria",
+        type: "Contract",
+        period: "Sept 2024 - Jan 2025",
+        description: [
+            "Collaborated in a 5-person development team to build a custom e-commerce platform for men's fashion retail.",
+            "Developed responsive product pages, shopping cart functionality, and checkout processes.",
+            "Implemented user authentication and account management features.",
+            "Ensured cross-browser compatibility and mobile responsiveness across the application.",
+            "Worked closely with the client to gather requirements and deliver solutions that met business objectives.",
         ],
     },
 ];
@@ -56,9 +86,13 @@ export default function WorkHistory() {
                 <p className="text-sm sm:text-base md:text-[1.5rem] leading-relaxed sm:leading-relaxed md:leading-normal mt-4 md:mt-[1rem]">
                     Below you will find a summary of my past employment
                     experience. Additionally, if you require, you can{" "}
-                    <span className="cursor-pointer border-b-2 border-[#f59e0b] hover:border-[#d97706] transition-colors">
+                    <a
+                        href="/files/daniel_resume.pdf"
+                        download
+                        className="cursor-pointer border-b-2 border-[#f59e0b] hover:border-[#d97706] transition-colors"
+                    >
                         download my resume.
-                    </span>
+                    </a>
                 </p>
 
                 <section className="mt-6 sm:mt-8 md:mt-[3rem]">

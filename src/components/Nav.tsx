@@ -61,20 +61,24 @@ export default function Navigation() {
                         );
                     })}
                     <section className="flex items-center gap-[1.5rem]">
-                        <Image
-                            src="/icons/x.svg"
-                            width={32}
-                            height={32}
-                            alt="Social Icon"
-                            className="w-[1.5rem] cursor-pointer hover:opacity-70 transition-opacity"
-                        />
-                        <Image
-                            src="/icons/linkedin.svg"
-                            width={32}
-                            height={32}
-                            alt="Social Icon"
-                            className="w-[1.5rem] cursor-pointer hover:opacity-70 transition-opacity"
-                        />
+                        <Link href="https://x.com/ChumaUdechukwu">
+                            <Image
+                                src="/icons/x.svg"
+                                width={32}
+                                height={32}
+                                alt="Social Icon"
+                                className="w-[1.5rem] cursor-pointer hover:opacity-70 transition-opacity"
+                            />
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/udechukwudc/">
+                            <Image
+                                src="/icons/linkedin.svg"
+                                width={32}
+                                height={32}
+                                alt="Social Icon"
+                                className="w-[1.5rem] cursor-pointer hover:opacity-70 transition-opacity"
+                            />
+                        </Link>
                     </section>
                 </div>
 
@@ -142,20 +146,24 @@ export default function Navigation() {
 
                         {/* Mobile Social Icons */}
                         <section className="flex items-center gap-[1.5rem] mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                            <Image
-                                src="/icons/x.svg"
-                                width={32}
-                                height={32}
-                                alt="Social Icon"
-                                className="w-[1.5rem] cursor-pointer hover:opacity-70 transition-opacity"
-                            />
-                            <Image
-                                src="/icons/linkedin.svg"
-                                width={32}
-                                height={32}
-                                alt="Social Icon"
-                                className="w-[1.5rem] cursor-pointer hover:opacity-70 transition-opacity"
-                            />
+                            <Link href="https://x.com/ChumaUdechukwu">
+                                <Image
+                                    src="/icons/x.svg"
+                                    width={32}
+                                    height={32}
+                                    alt="Social Icon"
+                                    className="w-[1.5rem] cursor-pointer hover:opacity-70 transition-opacity"
+                                />
+                            </Link>
+                            <Link href="https://www.linkedin.com/in/udechukwudc/">
+                                <Image
+                                    src="/icons/linkedin.svg"
+                                    width={32}
+                                    height={32}
+                                    alt="Social Icon"
+                                    className="w-[1.5rem] cursor-pointer hover:opacity-70 transition-opacity"
+                                />
+                            </Link>
                         </section>
                     </div>
                 </div>

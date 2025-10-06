@@ -3,6 +3,7 @@
  */
 
 import { SquigglyLine } from "@/components/SquigglyLine";
+import Link from "next/link";
 
 export default function Contact() {
     return (
@@ -21,15 +22,21 @@ export default function Contact() {
                     <div className="mt-[2rem] leading-relaxed">
                         <p>
                             You can reach me anytime at{" "}
-                            <span className="border-b-2 cursor-pointer border-[#f59e0b] font-bold">
+                            <a
+                                href="mailto:danieludechukwu117@gmail.com"
+                                className="border-b-2 cursor-pointer border-[#f59e0b] font-bold"
+                            >
                                 danieludechukwu117@gmail.com
-                            </span>
+                            </a>
                         </p>
                         <p>
                             As a backup option, you can{" "}
-                            <span className="border-b-2 cursor-pointer border-[#f59e0b] font-bold">
+                            <Link
+                                href="https://x.com/ChumaUdechukwu"
+                                className="border-b-2 cursor-pointer border-[#f59e0b] font-bold"
+                            >
                                 DM me on X
-                            </span>
+                            </Link>
                         </p>
 
                         <p>I usually respond right away on business days.</p>

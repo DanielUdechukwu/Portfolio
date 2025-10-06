@@ -36,37 +36,34 @@ export default function Home() {
                         </p>
                         <div className="sm:flex grid grid-cols-2 sm:flex-row items-start sm:items-center gap-4 sm:gap-6 md:gap-[3rem] mt-4 md:mt-[1rem]">
                             <div className="flex items-center gap-2">
-                                {/* <Image
-                                    src=""
-                                    width={24}
-                                    height={24}
-                                    alt="social icon"
-                                /> */}
-                                <p className="text-base sm:text-lg md:text-xl cursor-pointer hover:text-accent transition-colors">
+                                <Link
+                                    href="https://x.com/ChumaUdechukwu"
+                                    className="text-base sm:text-lg md:text-xl cursor-pointer hover:text-accent transition-colors"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     Twitter
-                                </p>
+                                </Link>
                             </div>
                             <div className="flex items-center gap-2">
-                                {/* <Image
-                                    src=""
-                                    width={24}
-                                    height={24}
-                                    alt="social icon"
-                                /> */}
-                                <p className="text-base sm:text-lg md:text-xl cursor-pointer hover:text-accent transition-colors">
+                                <Link
+                                    href="https://github.com/DanielUdechukwu"
+                                    className="text-base sm:text-lg md:text-xl cursor-pointer hover:text-accent transition-colors"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     GitHub
-                                </p>
+                                </Link>
                             </div>
                             <div className="flex items-center gap-2">
-                                {/* <Image
-                                    src=""
-                                    width={24}
-                                    height={24}
-                                    alt="social icon"
-                                /> */}
-                                <p className="text-base sm:text-lg md:text-xl cursor-pointer hover:text-accent transition-colors">
+                                <Link
+                                    href="https://www.linkedin.com/in/udechukwudc/"
+                                    className="text-base sm:text-lg md:text-xl cursor-pointer hover:text-accent transition-colors"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     Linkedin
-                                </p>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -77,9 +74,12 @@ export default function Home() {
                         </p>
                         <p className="mt-4 md:mt-[1rem] text-base sm:text-lg md:text-xl leading-relaxed">
                             You can reach me anytime at{" "}
-                            <span className="border-b-2 border-[#f59e0b] break-all sm:break-normal">
+                            <a
+                                href="mailto:danieludechukwu117@gmail.com"
+                                className="border-b-2 border-[#f59e0b] break-all sm:break-normal"
+                            >
                                 danieludechukwu117@gmail.com
-                            </span>
+                            </a>
                         </p>
                     </div>
                 </div>
