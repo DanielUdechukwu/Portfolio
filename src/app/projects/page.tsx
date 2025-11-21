@@ -31,6 +31,16 @@ export default function Projects() {
     const projects: ProjectTypes[] = [
         {
             id: 1,
+            name: "Klancy Design Essentials",
+            image: "/images/project3.png",
+            category: "E-Commerce",
+            description:
+                "A modern e-commerce platform designed for hair beauty essentials. Features high-quality product galleries, detailed specifications, customer reviews, and an intuitive shopping experience that helps customers make confident purchasing decisions, and a fully working dashboard to manage the website.",
+            technologies: ["Next.js", "TailwindCSS", "Python"],
+            projectUrl: "https://klancy.netlify.app",
+        },
+        {
+            id: 2,
             name: "AsteriskRD Website",
             image: "/images/project1.png",
             category: "Web-App",
@@ -40,7 +50,7 @@ export default function Projects() {
             projectUrl: "https://asteriskrd.tech",
         },
         {
-            id: 2,
+            id: 3,
             name: "Avantlush",
             image: "/images/project2.png",
             category: "E-commerce",
