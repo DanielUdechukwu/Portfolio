@@ -47,7 +47,7 @@ export default function Home() {
                             </div>
                             <div className="flex items-center gap-2">
                                 <Link
-                                    href="https://github.com/DanielUdechukwu"
+                                    href="https://github.com/sudo-thanos"
                                     className="text-base sm:text-lg md:text-xl cursor-pointer hover:text-accent transition-colors"
                                     target="_blank"
                                     rel="noopener noreferrer"
